@@ -1,15 +1,10 @@
-import React from 'react'
-import './Card.css';
+import React from "react";
+import "./Card.css";
 
-export default props =>
-    <div className="Card">
+export default (props) => (
+  <div className="Card">
+    <div className="Conteudo">{props.children}</div>
 
-        <div className="Conteudo">
-            {props.children}
-        </div>
-
-        <div className="Footer">
-            {props.title}
-        </div>
-
-    </div>
+    <div className="Footer">{props.title}</div>
+  </div>
+);
